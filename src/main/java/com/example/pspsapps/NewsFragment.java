@@ -38,7 +38,8 @@ public class NewsFragment extends Fragment {
         tampilBerita();
         return view;
     }
-    
+
+
     private void tampilBerita() {
         ApiServices api = InitRetrofit.getInstance();
         // Siapkan request
@@ -56,7 +57,7 @@ public class NewsFragment extends Fragment {
                     // Kalau response status nya = true
                     if (status){
                         // Buat Adapter untuk recycler view
-                        AdapterBerita adapter = new AdapterBerita(getContext(), data_berita);
+                        AdapterBerita adapter = new AdapterBerita(getActivity(),data_berita);
                         recyclerView.setAdapter(adapter);
                     } else {
                         // kalau tidak true

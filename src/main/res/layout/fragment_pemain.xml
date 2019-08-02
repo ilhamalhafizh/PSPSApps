@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".PemainFragment">
+
+    <LinearLayout
+        android:id="@+id/txtJudul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtJudul"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/pemain"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/idPemain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtJudul"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shapebutton"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_players" />
+
+                    <TextView
+                        android:id="@+id/textPemain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/players"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textPosisi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPemain"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/potition"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/idPemain1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idPemain"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shapebutton"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_players" />
+
+                    <TextView
+                        android:id="@+id/textPemain1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon1"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/players1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textPosisi1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPemain1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon1"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/potition1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/idPemain2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idPemain1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shapebutton"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_players" />
+
+                    <TextView
+                        android:id="@+id/textPemain2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon2"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/players2"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textPosisi2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPemain2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon2"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/potition1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/idPemain3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idPemain2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shapebutton"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_players" />
+
+                    <TextView
+                        android:id="@+id/textPemain3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon3"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/players3"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textPosisi3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPemain3"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon3"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/potition1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/idPemain4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idPemain3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shapebutton"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_players" />
+
+                    <TextView
+                        android:id="@+id/textPemain4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon4"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/players4"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textPosisi4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPemain4"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon4"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/potition1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/idPemain5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idPemain4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shapebutton"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_players" />
+
+                    <TextView
+                        android:id="@+id/textPemain5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon5"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/players5"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textPosisi5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPemain5"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon5"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/potition2"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/idPemain6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idPemain5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shapebutton"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_players" />
+
+                    <TextView
+                        android:id="@+id/textPemain6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon6"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/players6"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textPosisi6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPemain6"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon6"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/potition2"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/idPemain7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idPemain6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shapebutton"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon7"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_players" />
+
+                    <TextView
+                        android:id="@+id/textPemain7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon7"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/players7"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textPosisi7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPemain7"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon7"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/potition2"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/idPemain8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idPemain7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shapebutton"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon8"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_players" />
+
+                    <TextView
+                        android:id="@+id/textPemain8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon8"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/players8"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textPosisi8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPemain8"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon8"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/potition2"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/idPemain9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idPemain8"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shapebutton"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon9"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_players" />
+
+                    <TextView
+                        android:id="@+id/textPemain9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon9"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/players9"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textPosisi9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPemain9"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon9"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/potition3"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/idPemain10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idPemain9"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shapebutton"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon10"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_players" />
+
+                    <TextView
+                        android:id="@+id/textPemain10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon10"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/players10"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textPosisi10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPemain10"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/icon10"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/potition3"
+                        android:textAllCaps="false"
+                        android:textColor="@color/fontSS"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+

@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class InitRetrofit {
     // URL Server API
-    public static String API_URL = "https://pspsapps.000webhostapp.com/";
+    public static String API_URL = "https://pspsapps.000webhostapp.com";
 
     public static Retrofit setInit() {
         return new Retrofit.Builder().baseUrl(API_URL)

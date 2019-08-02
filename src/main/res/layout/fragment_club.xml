@@ -1,48 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_club"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF"
     tools:context=".ClubFragment">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/shapeimage"
-        android:scaleType="fitXY"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageView"
-        android:layout_marginTop="20dp"
-        android:id="@+id/scrollView">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.pspsapps._sliders.SliderView
+                android:id="@+id/sliderView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_indicator"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/pagesContainer"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/card1">
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/club"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
 
-            <TextView
-                android:id="@+id/text"
-                android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/btnSejarah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="15dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:background="@drawable/shapebutton"
+                    android:text="@string/club"
+                    android:textColor="@color/fontSS"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/card2">
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20sp"
-                android:text="@string/sejarah"
-                android:textSize="15sp" />
-        </LinearLayout>
-    </ScrollView>
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+                <Button
+                    android:id="@+id/btnPemain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shapebutton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/pemain"
+                    android:textSize="20dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/fontSS"
+                    android:textAlignment="center"
+                    android:padding="15dp"/>
+            </RelativeLayout>
+        
+    </LinearLayout>
 </RelativeLayout>
